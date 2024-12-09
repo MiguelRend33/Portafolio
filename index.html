@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu Encabezado-->
+     <div class="contenedor-header">
+     
+        <header>
+         <!-- Seccion de inicio-->   
+        <div class="logo">
+            <a href= "#"> Miguel Rendon </a>
+        </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="selection()">INICIO</a></li>   
+                    <li><a href="#sobremi" onclick="selection()" >SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="selection()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="selection()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="selection()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="selection()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="showHideMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+     
+    </div>
+
+    <!-- Sección Inicio -->
+     <section id="inicio" class="inicio">
+       <div class="contenido-banner">
+        <div class="contenedor-img">
+            <img src="img/Myself.jpg" alt="">
+        </div>
+        <h1>MIGUEL RENDON</h1>
+        <h2>INGENIERO FÍSICO </h2>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/miguel-angel-rendon-atehortua-04946423a/" onclick="openInNewWindow('https://www.linkedin.com/in/miguel-angel-rendon-atehortua-04946423a/')">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:atehortuam@gmail.com" onclick="openInNewWindow('mailto:atehortuam@gmail.com')">
+                <i class="fa-solid fa-inbox"></i>
+            </a>
+            <a href="tel:+573222822024" onclick="openInNewWindow('tel:+573222822024')">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+        </div>
+     </section>
+
+     <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy MIGUEL ANGEL.</span> Con una sólida formación académica y conocimientos prácticos adquiridos a través de proyectos universitarios y personales en soporte técnico, desarrollo backend y aplicaciones móviles. A pesar de tener poca experiencia profesional, he desarrollado habilidades en la resolución de problemas técnicos, optimización de procesos y creación de soluciones escalables. Estoy buscando un puesto como Asistente Técnico para aplicar mis conocimientos en programación, manejo de bases de datos y control de versiones, contribuyendo de manera efectiva en entornos tecnológicos. y escalables.</p>
+
+            <div class="fila">
+                <!-- DATOS PERSONALES -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            10-09-1980
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +57 322 282 2024
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            atehortuam@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--INTERESES -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>GIMANSIO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button onclick="downloadPDF()">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    <!-- Secction Skills -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- tecnichal Skills -->
+                 <div class="col">
+                    <h3>Technichal Skills</h3>
+                    <div class="skill">
+                        <span>Javascrip</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill">
+                            <span>HTML & CSS</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                            <span>PYTHON</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- Profesiona skills -->
+                <div class="col">
+                    <h3>Profesional Skills</h3>
+                    <div class="skill">
+                        <span>Comunación asertiva</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill">
+                            <span>Trabajo en equipo</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                            <span>Resiliencia</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="skill">
+                        <span>Sentido de Urgencia</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    <!-- Seccion Curriculum -->
+     <section class="curriculum" id="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Tecnologo en Analisis y Desarrollo de sofware</h4>
+                        <span class="casa">SENA</span>
+                        <span class="fecha">Cursando</span>
+                        <p>Tecnólogo en Análisis y Desarrollo de Software, con habilidades para analizar, diseñar, desarrollar e implementar soluciones de software. Capaz de traducir necesidades del usuario en requisitos técnicos, realizar pruebas, depurar errores y mantener sistemas eficientes. Experto en lenguajes de programación, bases de datos y herramientas de desarrollo, adaptándose a las demandas de la industria tecnológica.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                   
+                    <div class="item izq">
+                        <h4>Ingeniería de sofware</h4>
+                        <span class="casa">PLATZI</span>
+                        <span class="fecha">2023-2024</span>
+                        <p> <li>Fundamentos de ingeniería de sofware</li>
+                            <li>Curso Profesional de Git y GitHub</li>
+                            <li>Progamación Básica</li>
+                            <li>Introducción a la terminal y línea de comandos</li>
+                            <li>Bases de datos con SQL</li>
+                            <li> Python </li>
+                            <li>Python para ciencia de datos</li>
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="item izq">
+                        <h4> Formación docente para licenciados y no licenciados</h4>
+                        <span class="casa">Universidad Colombo Americana y Enseña por Colombia</span>
+                        <span class="fecha">2022-2023</span>
+                        <p>Curso de formación del programa de enseña por colombia con duración 480 horas  en diferentes tematicas referentes en pedagogía y educación, con dos semanas practicas en la región del Uraba de Antioquia</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+            
+                    <div class="item izq">
+                        <h4>Ingeniería Física</h4>
+                        <span class="casa">Universidad Tecnologica de Pereira</span>
+                        <span class="fecha">2015-2021</span>
+                        <p>Amplia formación profesional en ciencias básicas que
+                            me permite analizar y formular adecuadamente
+                            modelos teóricos y herramientas matemáticas en física con
+                            capacidad para resolver problemas en investigación y desarrollo,
+                            utilizando herramientas digitales o propias</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia</h3>
+                    <div class="item der">
+                        <h4>DOCENTE</h4>
+                        <span class="casa">Colegio Diocesano Paulo VI.</span>
+                        <span class="fecha">novienbre de 2023 - junio de 2024</span>
+                        <span class="casa">Unión temporal - Alianza educativa.</span>
+                        <span class="fecha">enero de 2023 - junio de 2023</span>
+                        <p>Preparar y desarrollar clases de matemáticas y física para grados 8°, 9° y
+                            10°; así como, construir un clima de aula positivo para garantizar ambientes
+                            seguros de aprendizaje.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="item der">
+                        <h4>EXPERTO TEMATICO</h4>
+                        <span class="casa">INNOVATIVE EDUCATION SERVICES AND SOLUTIONS</span>
+                        <span class="fecha">mayo de 2021 - enero de 2022</span>
+                        <p>Desarrollé y corregí código en JavaScript, aplicando algoritmos para optimización y análisis de datos.
+                            Brindé soporte en temas relacionados con matemáticas, física e ingeniería,
+                            facilitando el entendimiento de conceptos complejos en ciencia de datos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+<!--                     
+                    <div class="item der">
+                        <h4>Cursos PLATZI</h4>
+                        <span class="casa">Platzi</span>
+                        <span class="fecha">2023-2024</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non temporibus reiciendis libero facilis minima enim recusandae accusantium magnam corrupti? Perferendis, quod pariatur! Adipisci iusto assumenda porro harum expedita dolor nobis.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                
+                    <div class="item der">
+                        <h4>Ingeniería Física</h4>
+                        <span class="casa">Universidad Tecnologica de Pereira</span>
+                        <span class="fecha">2015-2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, debitis, minima expedita reprehenderit placeat delectus illo temporibus, modi pariatur totam non iusto fuga dicta impedit consequuntur. Eius porro omnis inventore!</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+     </section>
+     
+     <!-- Seccion Portafolio -->
+      <section class="portafolio" id="portafolio">
+            <div class="contenido-seccion">
+                <h2>Portafolio</h2>
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="img/capipepo.png" alt="">
+                        <div class="overlay">
+                            <h3>Proyectos</h3>
+                            <p>1</p>
+                        </div>
+                    </div>
+
+                    <div class="proyecto">
+                        <img src="img/hipodoge.png" alt="">
+                        <div class="overlay">
+                            <h3>Proyectos</h3>
+                            <p>2</p>
+                        </div>
+                    </div> 
+                    <div class="proyecto">
+                        <img src="img/capipepo.png" alt="">
+                        <div class="overlay">
+                            <h3>Proyectos</h3>
+                            <p>3</p>
+                        </div>
+                    </div> 
+                    <div class="proyecto">
+                        <img src="img/capipepo.png" alt="">
+                        <div class="overlay">
+                            <h3>Proyectos</h3>
+                            <p>4</p>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+      </section>
+      <!-- Seccion contacto -->
+       <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+                <div class="fila">
+                    <!-- Formulario -->
+                    <div class="col">
+                        <input type="text" placeholder="Tú nombre" id="">
+                        <input type="text" placeholder="Número de telefono" id="">
+                        <input type="text" placeholder="Correo electronico" id="">
+                        <input type="text" placeholder="Asunto" id="">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button>
+                            Enviar mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+                    <!-- Mapa -->
+                     <div class="col">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    Llamanos: 3222822024
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    Email: atehortuam@gmail.com
+                                </li>
+                     </div>
+                </div>
+        </div>
+       </section>
+       <!-- Footer -->
+        <footer>
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-solid fa-inbox"></i></a>
+                <a href="#"><i class="fa-solid fa-phone"></i></a>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+</body>
+</html>
